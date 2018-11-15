@@ -17,9 +17,12 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 | [ne][5]            | Terminal Text Editor    |
 | [slash][7]         | Terminal-Based System Info and OS Art |
 
+Roles I'm Looking to Fill:
 
-| Minor Applications | Usage |
-| ------------------ | ----- |
+| Role         | Candidates     |
+| ------------ | -------------- |
+| File Manager | Ranger, nnn    |
+| Web Browser  | Dillo?         |
 
 [1]: https://suckless.org/
 [2]: https://github.com/DaveDavenport/rofi
