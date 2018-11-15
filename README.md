@@ -9,7 +9,7 @@ Also, I've tried to create a system that doesn't use an insane amount of resourc
 | [Rofi][2]          | Application Launcher    |
 | [XST][3]           | Terminal Emulator       |
 | [DeaDBeeF][4]      | Audiophile Music Player |
-
+| [ne][5]            | Terminal text editor    |
 
 
 | Minor Applications | Usage |
@@ -19,3 +19,4 @@ Also, I've tried to create a system that doesn't use an insane amount of resourc
 [2]: https://github.com/DaveDavenport/rofi
 [3]: https://github.com/gnotclub/xst
 [4]: https://github.com/DeaDBeeF-Player/deadbeef
+[5]: http://ne.di.unimi.it/
