@@ -14,7 +14,8 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 | [Rofi][2]          | Application Launcher    |
 | [XST][3]           | Terminal Emulator       |
 | [DeaDBeeF][4]      | Audiophile Music Player |
-| [ne][5]            | Terminal text editor    |
+| [ne][5]            | Terminal Text Editor    |
+| [slash][7]         | Terminal-Based System Info and OS Art |
 
 
 | Minor Applications | Usage |
@@ -26,3 +27,4 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 [4]: https://github.com/DeaDBeeF-Player/deadbeef
 [5]: http://ne.di.unimi.it/
 [6]: https://antergos.com/
+[7]: https://github.com/Nyctanthous/slash
