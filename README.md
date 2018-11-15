@@ -8,14 +8,15 @@ There are old-school, powerful tools out there do do many given tasks. (Emacs, V
 
 I'm also not a fan of slapping everything onto Electron or some other JS-style platform. So I've attempted to get modern software created with our current, better understanding of UX that also integrates the superior old-school values of well-written, efficient code in a fast language.
 
-| Major Applications | Usage                   |
-| ------------------ | ----------------------- |
-| [Antergos][6]      | Operating System        |
-| [Rofi][2]          | Application Launcher    |
-| [XST][3]           | Terminal Emulator       |
-| [DeaDBeeF][4]      | Audiophile Music Player |
-| [ne][5]            | Terminal Text Editor    |
+| Major Applications | Usage                                 |
+| ------------------ | ------------------------------------- |
+| [Antergos][6]      | Operating System                      |
+| [Rofi][2]          | Application Launcher                  |
+| [XST][3]           | Terminal Emulator                     |
+| [DeaDBeeF][4]      | Audiophile Music Player               |
+| [ne][5]            | Terminal Text Editor                  |
 | [slash][7]         | Terminal-Based System Info and OS Art |
+| [mksh][8]          | Implementation of the Korn Shell      |
 
 Roles I'm Looking to Fill:
 
@@ -31,3 +32,4 @@ Roles I'm Looking to Fill:
 [5]: http://ne.di.unimi.it/
 [6]: https://antergos.com/
 [7]: https://github.com/Nyctanthous/slash
+[8]: https://www.mirbsd.org/mksh.htm
