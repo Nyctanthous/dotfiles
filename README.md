@@ -20,6 +20,11 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 | [slash][7]         | Terminal-Based System Info and OS Art |
 | [mksh][8]          | Implementation of the Korn Shell      |
 
+| Minor Applications | Usage                                 |
+| ------------------ | ------------------------------------- |
+| [Most][11]         | Pager to replace Less/More            |
+
+
 Roles I'm Looking to Fill:
 
 | Role         | Candidates     |
@@ -37,3 +42,4 @@ Roles I'm Looking to Fill:
 [8]: https://www.mirbsd.org/mksh.htm
 [9]: https://github.com/Airblader/i3
 [10]: https://polybar.github.io/
+[11]: https://www.jedsoft.org/most/
