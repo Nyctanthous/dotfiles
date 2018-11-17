@@ -19,18 +19,12 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 | [ne][5]            | Terminal Text Editor                  |
 | [slash][7]         | Terminal-Based System Info and OS Art |
 | [mksh][8]          | Implementation of the Korn Shell      |
+| [ranger][13]       | File Manager                          |
 
 | Minor Applications | Usage                                 |
 | ------------------ | ------------------------------------- |
-| [Most][11]         | Pager to replace Less/More            |
-
-
-Roles I'm Looking to Fill:
-
-| Role         | Candidates     |
-| ------------ | -------------- |
-| File Manager | Ranger, nnn    |
-| Web Browser  | Dillo?         |
+| [Most][11]         | Pager to replace Less/More, has shiny syntax highlighting |
+| [highlight][12]    | Syntax highlighter you can pipe into |
 
 [1]: https://suckless.org/
 [2]: https://github.com/DaveDavenport/rofi
@@ -43,3 +37,5 @@ Roles I'm Looking to Fill:
 [9]: https://github.com/Airblader/i3
 [10]: https://polybar.github.io/
 [11]: https://www.jedsoft.org/most/
+[12]: https://gitlab.com/saalen/highlight/tree/master
+[13]: https://github.com/ranger/ranger
