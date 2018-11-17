@@ -19,7 +19,7 @@
 
 set $mod Mod1
 set $term xst
-set $wallpaper "/home/ben/Pictures/Wallpaper/ocean-ultrawide.jpg"
+set $wallpaper "/home/ben/Dropbox/Pictures/Wallpaper/ocean-ultrawide.jpg"
 
 # ========================================================================= #
 #                        Application Launch Shortcuts
@@ -207,12 +207,7 @@ exec --no-startup-id redshift
 
 # Compositing, and the bar.
 exec_always --no-startup-id "compton -cC"
-exec --no-startup-id ~/.config/polybar/polybar-handler.sh &
+exec_always --no-startup-id dash /home/ben/.config/polybar/polybar-handler.sh &
 
 # Set Wallpaper
-exec --no-startup-id feh --bg-scale --no-xinerama $wallpaper
-
-# Service for VMWARE
-exec_always --no-startup-id systemctl start vmware-networks.service
-exec_always --no-startup-id sudo modprobe vmnet
-exec_always --no=startup-id sudo vmware-networks --start
+exec_always --no-startup-id feh --bg-scale --no-xinerama $wallpaper
