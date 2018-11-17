@@ -1,20 +1,17 @@
-;==========================================================
-;
-;
-;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
-;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
-;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
-;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
-;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
-;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/jaagr/polybar
-;
-;   The README contains alot of information
-;
-;==========================================================
+; ============================================================= ;
+; =                                                           = ;
+; =                                                           = ;
+; =  ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗   = ;
+; =  ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗  = ;
+; =  ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝  = ;
+; =  ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗  = ;
+; =  ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║  = ;
+; =  ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  = ;
+; =                                                           = ;
+; =                                                           = ;
+; =          A custom configuration for polybar.              = ;
+; =                                                           = ;
+; ============================================================= ;
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -25,20 +22,23 @@ primary = ${xrdb:color8:#222}
 secondary = #B2535B
 alert = #B2535B
 
-;------------;
-; TOPBAR    ;
-;------------;
+
+; ============================================================= ;
+;                             TOPBAR                            ;
+; ============================================================= ;
 
 [bar/top]
+bottom = false
+
 line-size = 3
 line-color = #f00
 
 border-size = 4
 border-color = #00000000
 
-;------------;
-; DIMENSIONS ;
-;------------;
+; ============================================================= ;
+;                       TOPBAR DIMENSIONS                       ;
+; ============================================================= ;
 
 width = 100%
 height = 30
@@ -50,24 +50,19 @@ border-bottom-size = 0
 border-right-size = 10
 border-left-size = 10
 
-;----------;
-; LOCATION ;
-;----------;
 
-bottom = false
-
-;-------;
-; FONTS ;
-;-------;
+; ============================================================= ;
+;                          TOPBAR FONTS                         ;
+; ============================================================= ;
 
 font-0 = scientifica:style=Regular:size=11:antialias=true;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=9;4"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;4"
 font-3 = "Font Awesome 5 Brands:pixelsize=9;4"
 
-;--------;
-; COLORS ;
-;--------;
+; ============================================================= ;
+;                         TOPBAR COLORS                         ;
+; ============================================================= ;
 
 background = 0
 background-alt = #555
@@ -77,9 +72,9 @@ primary = #E1D4AE
 secondary = ${xrdb:color1}
 alert = #B2535B
 
-;---------------;
-; MISCELLANEOUS ;
-;---------------;
+; ============================================================= ;
+;                     TOPBAR MISCELLANEOUS                      ;
+; ============================================================= ;
 
 radius = 0.0
 fixed-center = true
@@ -96,34 +91,29 @@ modules-right = eth date
 ;tray-transparent = true
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+wm-restack = i3
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-;------------;
-; BOTBAR    ;
-;------------;
+
+; ============================================================= ;
+;                          BOTTOMBAR                            ;
+; ============================================================= ;
 
 [bar/bottom]
+bottom = true
+
 line-size = 3
 line-color = #f00
 
 border-size = 4
 border-color = #00000000
 
-;------------;
-; DIMENSIONS ;
-;------------;
+
+; ============================================================= ;
+;                    BOTTOMBAR DIMENSIONS                       ;
+; ============================================================= ;
 
 width = 100%
 height = 30
@@ -135,25 +125,21 @@ border-bottom-size = 0
 border-right-size = 10
 border-left-size = 10
 
-;----------;
-; LOCATION ;
-;----------;
 
-bottom = true
-
-;-------;
-; FONTS ;
-;-------;
+; ============================================================= ;
+;                        BOTTOMBAR FONTS                        ;
+; ============================================================= ;
 
 font-0 = scientifica:style=Regular:size=11:antialias=true;3
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=11;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=11;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=11;3"
+font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=9;4"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;4"
+font-3 = "Font Awesome 5 Brands:pixelsize=9;4"
 font-4 = "Scientifica:size=11;3"
 
-;--------;
-; COLORS ;
-;--------;
+
+; ============================================================= ;
+;                        BOTTOMBAR COLORS                       ;
+; ============================================================= ;
 
 background = 0
 background-alt = #555
@@ -163,9 +149,10 @@ primary = #E1D4AE
 secondary = ${xrdb:color1}
 alert = #B2535B
 
-;---------------;
-; MISCELLANEOUS ;
-;---------------;
+
+; ============================================================= ;
+;                   BOTTOMBAR MISCELLANEOUS                     ;
+; ============================================================= ;
 
 radius = 0.0
 fixed-center = true
@@ -176,12 +163,16 @@ module-margin-left = 1
 module-margin-right = 2
 
 modules-left = i3
-;modules-center = spotify
 modules-right = memory cpu temperature
 
-;---------;
-; MODULES ;
-;---------;
+
+; ============================================================= ;
+; ============================================================= ;
+;                                                               ;
+;                            MODULES                            ;
+;                                                               ;
+; ============================================================= ;
+; ============================================================= ;
 
 [module/spotify]
 type = custom/script
@@ -526,13 +517,7 @@ menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini

@@ -12,8 +12,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-alias more=most
-alias less=most
+alias more=$PAGER
+alias less=$PAGER
 alias pg=$PAGER
 alias db=$DEBUGGER
 alias cc=$CC
