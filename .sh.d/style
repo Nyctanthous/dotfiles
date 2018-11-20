@@ -1,26 +1,39 @@
-# $dotfiles: style, v 1.0  2016/03/11 00:56:50 dcat Exp $
+# ========================================================================= #
+# =                                | |      | |                           = #
+# =                       _ __ ___ | | _____| |__                         = #
+# =                      | '_ ` _ \| |/ / __| '_ \                        = #
+# =                      | | | | | |   <\__ \ | | |                       = #
+# =                      |_| |_| |_|_|\_\___/_| |_|                       = #
+# =                The Prompt Color and Character(s) File                 = #
+# ========================================================================= #                          
 
 PRINT='echo -n'
 [ `$PRINT | wc -c` -ne 0 ] && PRINT=printf
 PS1='$(_prompt) '
 
 _prompt() {
+	# Pick the color of the prompt after a program returns.
 	case $? in
-	# EXIT_SUCCESS or ^C
+
+	# Handle ^C and exit success.
 	0|130)
 		RET=240
 		;;
-	# command not found
+	
+	# Command not found
 	127)
 		RET=196
 		;;
+	
+	# Default...what even is this command?
 	*)
 		RET=202
 		;;
 	esac
 
+	# Actually construct the prompt with our generated color codes.
 	RET="[38;5;${RET}m"
-	RET="${RET}─[0m "
+	RET="${RET}↳[0m "
 
 	$PRINT $RET
 }

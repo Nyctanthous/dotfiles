@@ -27,7 +27,6 @@ set $wallpaper "/home/ben/Dropbox/Pictures/Wallpaper/ocean-ultrawide.jpg"
 
 bindsym $mod+Return exec xst -e dash -c "(cd /home/ben/github/slash && ./slash) && mksh"
 bindsym $mod+f exec xst -e ranger
-bindsym $mod+t exec vmplayer /home/ben/vmware/Windows\ Server\ 2016/Windows\ Server\ 2016.vmx
 
 bindsym $mod+d exec rofi -show-icons -show drun
 

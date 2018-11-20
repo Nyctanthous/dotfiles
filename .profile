@@ -4,7 +4,10 @@ LC_CTYPE=en_US.UTF-8
 TZ=Europe/Oslo
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-PATH=$PATH:/usr/X11R6/bin:/usr/games
+
+# PATH for things that I've personally installed
+PATH=$PATH:/home/ben/anaconda3/bin
+
 GOPATH=$HOME/.go
 XDG_DATA_HOME=$HOME/.config
 MAIL=/var/mail/dcat
