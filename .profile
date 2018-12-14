@@ -1,30 +1,42 @@
-# $dotfiles: dot.profile,v 1.1 2016/03/11 00:54:40 dcat Exp $
+# ========================================================================= #
+# =                                     ,,                                = #
+# =                                   `7MM                                = #
+# =                                     MM                                = #
+# =                            ,pP"Ybd  MMpMMMb.                          = #
+# =                            8I   `"  MM    MM                          = #
+# =                            `YMMMa.  MM    MM                          = #
+# =                            L.   I8  MM    MM                          = #
+# =                            M9mmmP'.JMML  JMML.                        = #
+# =                                                                       = #
+# =       A configuration file for shells that use the Bourne shell       = #
+# =                          configuration standard.                      = #
+# ========================================================================= #
 
+# ========================================================================= #
+# =                         Locale/ TZ settings                           = #
+# ========================================================================= #
 LC_CTYPE=en_US.UTF-8
-TZ=Europe/Oslo
+TZ=America/New_York
 
+
+# ========================================================================= #
+# =                           PATH configuration                          = #
+# ========================================================================= #
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
-# PATH for things that I've personally installed
-PATH=$PATH:/home/ben/anaconda3/bin
+# PATH for things that I've personally installed. Put them first.
+PATH=/home/ben/anaconda3/bin:$PATH
 
-GOPATH=$HOME/.go
-XDG_DATA_HOME=$HOME/.config
-MAIL=/var/mail/dcat
-
+# ========================================================================= #
+# =                  Default applications/appsettings                     = #
+# ========================================================================= #
 EDITOR=ne
 VISUAL=$EDITOR
 PAGER=most
-BROWSER=ranger
+BROWSER=google-chrome-stable
 MANWIDTH=80
 
-CC=cc
-DEBUGGER=gdb
-TRACER=ktrace
-CVSROOT=anoncvs@anoncvs.eu.openbsd.org:/cvs
-
-MPD_HOST=nivlhel
-NNTPSERVER=news.gmane.org
-
-export LC_CTYPE TZ PATH GOPATH XDG_DATA_HOME MAIL EDITOR VISUAL PAGER BROWSER \
-	MANWIDTH CC DEBUGGER TRACER CVSROOT MPD_HOST NNTPSERVER
+# ========================================================================= #
+# =                             Final export                              = #
+# ========================================================================= #
+export LC_CTYPE TZ PATH XDG_DATA_HOME EDITOR VISUAL PAGER BROWSER MANWIDTH

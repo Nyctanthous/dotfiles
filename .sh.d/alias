@@ -36,3 +36,5 @@ alias b=bg
 alias f=fg
 alias p=pwd
 alias u=whoami
+
+alias python=/home/ben/anaconda3/bin/python

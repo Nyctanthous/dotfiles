@@ -1,17 +1,18 @@
-; ============================================================= ;
-; =                                                           = ;
-; =                                                           = ;
-; =  ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗   = ;
-; =  ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗  = ;
-; =  ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝  = ;
-; =  ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗  = ;
-; =  ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║  = ;
-; =  ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝  = ;
-; =                                                           = ;
-; =                                                           = ;
-; =          A custom configuration for polybar.              = ;
-; =                                                           = ;
-; ============================================================= ;
+; ========================================================================= ;
+; =                            ,,            ,,                           = ;
+; =                          `7MM           *MM                           = ;
+; =                            MM            MM                           = ;
+; =       `7MMpdMAo.  ,pW"Wq.  MM `7M'   `MF'MM,dMMb.   ,6"Yb. `7Mb,od8   = ;
+; =         MM   `Wb 6W'   `Wb MM   VA   ,V  MM    `Mb 8)   MM   MM' "'   = ;
+; =         MM    M8 8M     M8 MM    VA ,V   MM     M8  ,pm9MM   MM       = ;
+; =         MM   ,AP YA.   ,A9 MM     VVV    MM.   ,M9 8M   MM   MM       = ;
+; =         MMbmmd'   `Ybmd9'.JMML.   ,V     P^YbmdP'  `Moo9^Yo.JMML.     = ;
+; =         MM                       ,V                                   = ;
+; =       .JMML.                  OOb"                                    = ;
+; =                                                                       = ;
+; =                    A custom configuration for polybar.                = ;
+; =                                                                       = ;
+; ========================================================================= ;
 
 [colors]
 background = ${xrdb:color0:#222}
@@ -23,11 +24,12 @@ secondary = #B2535B
 alert = #B2535B
 
 
-; ============================================================= ;
-;                             TOPBAR                            ;
-; ============================================================= ;
+; ========================================================================= ;
+;                                   TOPBAR                                  ;
+; ========================================================================= ;
 
 [bar/top]
+monitor = DP-3
 bottom = false
 
 line-size = 3
@@ -36,9 +38,9 @@ line-color = #f00
 border-size = 4
 border-color = #00000000
 
-; ============================================================= ;
-;                       TOPBAR DIMENSIONS                       ;
-; ============================================================= ;
+; ========================================================================= ;
+;                               TOPBAR DIMENSIONS                           ;
+; ========================================================================= ;
 
 width = 100%
 height = 30
@@ -51,18 +53,18 @@ border-right-size = 10
 border-left-size = 10
 
 
-; ============================================================= ;
-;                          TOPBAR FONTS                         ;
-; ============================================================= ;
+; ========================================================================= ;
+;                                 TOPBAR FONTS                              ;
+; ========================================================================= ;
 
-font-0 = scientifica:style=Regular:size=11:antialias=true;3"
+font-0 = "scientifica:style=Regular:size=13:antialias=true;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=9;4"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;4"
 font-3 = "Font Awesome 5 Brands:pixelsize=9;4"
 
-; ============================================================= ;
-;                         TOPBAR COLORS                         ;
-; ============================================================= ;
+; ========================================================================= ;
+;                                 TOPBAR COLORS                             ;
+; ========================================================================= ;
 
 background = 0
 background-alt = #555
@@ -72,24 +74,35 @@ primary = #E1D4AE
 secondary = ${xrdb:color1}
 alert = #B2535B
 
-; ============================================================= ;
-;                     TOPBAR MISCELLANEOUS                      ;
-; ============================================================= ;
+; ========================================================================= ;
+;                              TOPBAR MISCELLANEOUS                         ;
+; ========================================================================= ;
 
 radius = 0.0
 fixed-center = true
-padding-left = 0
+padding-left = 2
 padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
 
-modules-left = powermenu alsa
+modules-left = alsa
 modules-center = xwindow
 modules-right = eth date
 
-;tray-transparent = true
-;tray-background = #0063ff
+tray-transparent = true
+tray-background = #0063ff
+tray-maxsize = 16
+tray-position = right
+; Tray offset defined as pixel value (e.g. 35) or percentage (e.g. 50%)
+tray-offset-x = 0
+tray-offset-y = 0
+
+; Pad the sides of each tray icon
+tray-padding = 0
+
+; Scale factor for tray clients
+tray-scale = 1.0
 
 wm-restack = i3
 
@@ -97,11 +110,12 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 
-; ============================================================= ;
-;                          BOTTOMBAR                            ;
-; ============================================================= ;
+; ========================================================================= ;
+;                                 BOTTOMBAR                                 ;
+; ========================================================================= ;
 
 [bar/bottom]
+monitor = DP-3
 bottom = true
 
 line-size = 3
@@ -111,9 +125,9 @@ border-size = 4
 border-color = #00000000
 
 
-; ============================================================= ;
-;                    BOTTOMBAR DIMENSIONS                       ;
-; ============================================================= ;
+; ========================================================================= ;
+;                           BOTTOMBAR DIMENSIONS                            ;
+; ========================================================================= ;
 
 width = 100%
 height = 30
@@ -126,20 +140,20 @@ border-right-size = 10
 border-left-size = 10
 
 
-; ============================================================= ;
-;                        BOTTOMBAR FONTS                        ;
-; ============================================================= ;
+; ========================================================================= ;
+;                               BOTTOMBAR FONTS                             ;
+; ========================================================================= ;
 
-font-0 = scientifica:style=Regular:size=11:antialias=true;3
-font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=9;4"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=9;4"
-font-3 = "Font Awesome 5 Brands:pixelsize=9;4"
-font-4 = "Scientifica:size=11;3"
+font-0 = "scientifica:style=Regular:size=13;2"
+font-1 = "Font Awesome 5 Free:style=Solid:size=9;3"
+font-2 = "Font Awesome 5 Free:style=Regular:size=9;3"
+font-3 = "Font Awesome 5 Brands:pixelsize=9;3"
+font-4 = "scientifica:size=11;3"
 
 
-; ============================================================= ;
-;                        BOTTOMBAR COLORS                       ;
-; ============================================================= ;
+; ========================================================================= ;
+;                               BOTTOMBAR COLORS                            ;
+; ========================================================================= ;
 
 background = 0
 background-alt = #555
@@ -150,9 +164,9 @@ secondary = ${xrdb:color1}
 alert = #B2535B
 
 
-; ============================================================= ;
-;                   BOTTOMBAR MISCELLANEOUS                     ;
-; ============================================================= ;
+; ========================================================================= ;
+;                            BOTTOMBAR MISCELLANEOUS                        ;
+; ========================================================================= ;
 
 radius = 0.0
 fixed-center = true
@@ -163,25 +177,18 @@ module-margin-left = 1
 module-margin-right = 2
 
 modules-left = i3
+modules-center = mpd
 modules-right = memory cpu temperature
+tray-position = right
 
 
-; ============================================================= ;
-; ============================================================= ;
-;                                                               ;
-;                            MODULES                            ;
-;                                                               ;
-; ============================================================= ;
-; ============================================================= ;
-
-[module/spotify]
-type = custom/script
-interval = 1
-format-prefix = "  "
-format = <label>
-exec = python $HOME/.config/polybar/spotify.py
-format-underline = 
-format-foreground = ${colors.primary}
+; ========================================================================= ;
+; ========================================================================= ;
+;                                                                           ;
+;                                   MODULES                                 ;
+;                                                                           ;
+; ========================================================================= ;
+; ========================================================================= ;
 
 [module/xwindow]
 type = internal/xwindow
@@ -221,17 +228,6 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = false
 wrapping-scroll = false
-
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;;
-ws-icon-6 = 7;;
-ws-icon-7 = 8;;
-ws-icon-8 = 9;;
-ws-icon-default = 
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -350,7 +346,7 @@ interface = enp3s0f0
 interval = 3.0
 
 format-connected-underline = ${xrdb:color6}
-format-connected-prefix = " "
+format-connected-prefix =
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -364,46 +360,18 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = %A, %B %d, %Y %%{F-}
+date-alt = %%{F#99} %m/%d/%Y %%{F-}
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %I:%M %p%{F-}
+time-alt = %I:%M %p%%{F-} %%{F#fba922}%S%%{F-}
 
-format-prefix =  
+format-prefix =
 format-prefix-foreground = ${colors.primary}
 format-underline = 
 format-foreground = ${colors.primary}
 
 label = %date% %time%
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume =   <label-volume> <bar-volume>
-format-volume-foreground = ${colors.primary}
-label-volume = %percentage%%
-label-volume-foreground = ${colors.primary}
-
-label-muted =   mudo
-label-muted-foreground = ${colors.secondary}
-
-bar-volume-width = 10
-bar-volume-foreground-0 = ${xrdb:color4}
-bar-volume-foreground-1 = ${xrdb:color4}
-bar-volume-foreground-2 = ${xrdb:color4}
-bar-volume-foreground-3 = ${xrdb:color4}
-bar-volume-foreground-4 = ${xrdb:color4}
-bar-volume-foreground-5 = ${xrdb:color3}
-bar-volume-foreground-6 = ${xrdb:color1}
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 4
-bar-volume-fill = ─
-bar-volume-fill-font = 4
-bar-volume-empty = ─
-bar-volume-empty-font = 4
-bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/alsa]
 type = internal/alsa
@@ -412,11 +380,11 @@ format-volume = <label-volume> <bar-volume>
 label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " "
+format-muted-prefix =
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+label-muted = MUTED
 
-bar-volume-width = 10
+bar-volume-width = 20
 bar-volume-foreground-0 = ${xrdb:color4}
 bar-volume-foreground-1 = ${xrdb:color4}
 bar-volume-foreground-2 = ${xrdb:color4}
@@ -425,13 +393,13 @@ bar-volume-foreground-4 = ${xrdb:color4}
 bar-volume-foreground-5 = ${xrdb:color3}
 bar-volume-foreground-6 = ${xrdb:color1}
 bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
+bar-volume-indicator =
+bar-volume-indicator-font = 1
 bar-volume-fill = ─
-bar-volume-fill-font = 2
+bar-volume-fill-font = 1
 bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = ${colors.background-alt}
 
 [module/battery]
 type = internal/battery
@@ -470,7 +438,7 @@ animation-discharging-framerate = 750
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 70
 
 format = <ramp> <label>
 format-foreground = ${colors.primary}
@@ -478,8 +446,8 @@ format-underline =
 format-warn = <ramp> <label-warn>
 format-warn-underline = 
 
-label =  TEMPERATURE %temperature-c%
-label-warn =  TEMPERATURE %temperature-c%
+label =  %temperature-c%
+label-warn =  %temperature-c%
 label-warn-foreground = ${colors.secondary}
 label-foreground = ${colors.primary}
 
@@ -493,9 +461,10 @@ type = custom/menu
 expand-right = true
 format-spacing = 1
 
-label-open = "  "
+label-open = " "
+label-open-font = 2
 label-open-foreground = ${colors.primary}
-label-close = "  cancel "
+label-close = " cancel "
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.primary}

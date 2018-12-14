@@ -27,8 +27,9 @@ set $wallpaper "/home/ben/Dropbox/Pictures/Wallpaper/ocean-ultrawide.jpg"
 
 bindsym $mod+Return exec xst -e dash -c "(cd /home/ben/github/slash && ./slash) && mksh"
 bindsym $mod+f exec xst -e ranger
+bindsym $mod+t exec vmplayer /home/ben/vmware/Windows\ Server\ 2016/Windows\ Server\ 2016.vmx
 
-bindsym $mod+d exec rofi -show-icons -show drun
+bindsym $mod+d exec rofi -show-icons -show drun -terminal xst -i
 
 # ========================================================================= #
 #                            i3-gaps Settings
@@ -196,6 +197,9 @@ bindsym $mod+F6 exec mocp --stop
 bindsym $mod+F7 exec mocp --previous
 bindsym $mod+F8 exec mocp --next
 
+bindsym $mod+Shift+plus exec xbacklight -inc 10
+bindsym $mod+Shift+minus exec xbacklight -dec 10
+
 # ========================================================================= #
 #                            Autostart Applications
 # ========================================================================= #
@@ -207,6 +211,7 @@ exec --no-startup-id redshift
 # Compositing, and the bar.
 exec_always --no-startup-id "compton -cC"
 exec_always --no-startup-id dash /home/ben/.config/polybar/polybar-handler.sh &
+exec_always --no-startup-id nm-applet
 
 # Set Wallpaper
 exec_always --no-startup-id feh --bg-scale --no-xinerama $wallpaper
