@@ -11,10 +11,20 @@
 # ========================================================================= #
 # =                            System Commands                            = #
 # ========================================================================= #
-LS=ls
+LS=exa
+TOP=gotop
+PACMAN=pikaur
 
-alias la="$LS -A"
-alias ll="$LS -al"
+alias sudo='sudo '
+alias ls='$LS'
+alias la="$LS --all"
+alias ll="$LS --header --group --long --grid"
+alias lh="$LS --header --group --long --grid --all"
+
+alias top="$TOP"
+alias htop="$TOP"
+
+alias pacman="$PACMAN"
 
 #alias ~='cd'
 #alias -- -='cd -'
@@ -30,11 +40,6 @@ alias more=$PAGER
 alias less=$PAGER
 alias pg=$PAGER
 alias trace=$TRACER
-alias j=jobs
-alias h=history
-alias b=bg
-alias f=fg
 alias p=pwd
-alias u=whoami
 
-alias python=/home/ben/anaconda3/bin/python
+alias python=/usr/bin/python3

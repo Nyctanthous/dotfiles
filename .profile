@@ -33,7 +33,7 @@ PATH=/home/ben/anaconda3/bin:$PATH
 EDITOR=ne
 VISUAL=$EDITOR
 PAGER=most
-BROWSER=google-chrome-stable
+BROWSER=firefox
 MANWIDTH=80
 
 # ========================================================================= #

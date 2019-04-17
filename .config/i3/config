@@ -18,7 +18,7 @@
 # ========================================================================= #
 
 # Wallpaper
-set $wallpaper /home/ben/Pictures/Wallpaper/dark-skyscrapers.jpg
+set $wallpaper /home/ben/Pictures/Wallpaper/raw/open-neon.jpg
 
 # Xresources      var      value       fallback
 set_from_resource $bg      background  #19043C
@@ -68,6 +68,7 @@ bindsym $mod+Shift+space floating toggle
 exec_always wpg -s $wallpaper -n && wal -i $wallpaper -n
 exec_always feh --bg-fill --no-xinerama $wallpaper
 exec_always wal_steam -w
+exec_always redshift -x && redshift
 
 exec_always --no-startup-id sh ~/.config/polybar/polybar-handler.sh
 exec_always --no-startup-id if pgrep compton; then pkill compton && compton; else compton; fi
@@ -77,9 +78,17 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 exec_always --no-startup-id numlockx on
 
 # run once
+exec feh --bg-fill --no-xinerama $wallpaper
+exec --no-startup-id ckb-next
 exec --no-startup-id mailspring
 exec --no-startup-id dropbox
 exec --no-startup-id xfsettingsd
+
+# Network manager in tray
+exec nm-applet
+
+# System-level ad blacklist
+exec --no-startup-id hblock
 
 # ========================================================================= #
 #                        Application Launch Shortcuts
@@ -92,8 +101,8 @@ bindsym $Mod+Shift+q kill
 bindsym $Mod+space exec --no-startup-id rofi -show drun
 
 # core
-bindsym $Mod+w          exec --no-startup-id exo-open --launch WebBrowser
-bindsym $Mod+f          exec --no-startup-id exo-open --launch FileManager
+bindsym $Mod+w          exec firefox
+bindsym $Mod+f          exec alacritty -e dash -c "(cat ~/.cache/wal/sequences &) && ranger"
 bindsym $Mod+Return     exec alacritty -e dash -c "(cd /home/ben/github/slash && ./slash) && mksh"
 
 # logout script

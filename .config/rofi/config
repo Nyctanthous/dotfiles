@@ -1,0 +1,20 @@
+# Dark Wal theme.
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+# Light Wal theme.
+# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+
+# Settings that affect how applications appear
+rofi.show-icons: true
+rofi.font: monospace 12
+
+# Settings that affect how Rofi appears
+rofi.modi: run
+rofi.padding: 30
+rofi.line-padding: 2
+rofi.columns: 3
+rofi.lines: 10
+rofi.color-enabled: true
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+rofi.kb-cancel: Escape,Alt+F1
