@@ -19,6 +19,7 @@
 
 # Wallpaper
 set $wallpaper /home/ben/Pictures/Wallpaper/raw/open-neon.jpg
+#set $wallpaper /home/ben/Pictures/Wallpaper/raw/hypebeast.jpg
 
 # Xresources      var      value       fallback
 set_from_resource $bg      background  #19043C
@@ -102,8 +103,9 @@ bindsym $Mod+space exec --no-startup-id rofi -show drun
 
 # core
 bindsym $Mod+w          exec firefox
-bindsym $Mod+f          exec alacritty -e dash -c "(cat ~/.cache/wal/sequences &) && ranger"
-bindsym $Mod+Return     exec alacritty -e dash -c "(cd /home/ben/github/slash && ./slash) && mksh"
+bindsym $Mod+d          exec discord
+bindsym $Mod+f          exec kitty -e dash -c "(cat ~/.cache/wal/sequences &) && ranger"
+bindsym $Mod+Return     exec kitty -e dash -c "(cat ~/.cache/wal/sequences &) && neofetch --kitty $WALLPAPER && zsh"
 
 # logout script
 bindsym $Mod+x exec --no-startup-id rofi_run -l
