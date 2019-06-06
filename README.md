@@ -1,8 +1,8 @@
 # dotfiles
 ## A personal collection of tweaks to Linux-based systems.
 
-I've tried somewhat to use software that doesn't [suck too much][1], but is also very configurable.
-Also, I've tried to create a system that doesn't use an insane amount of resources. So far, moderate success.
+I've eschewed using software that doesn't [suck too much][1]. It sucks to use; we're not living in the 80s.
+Instead, I've opted for software that gives you more power than competing solutions.
 
 There are old-school, powerful tools out there do do many given tasks. (Emacs, Vi/Vim, Arch, etc) I'm not a fan, because they often rely on antequated designs for their UX. It makes them unnecessarily hard to use for modern-day users.
 
