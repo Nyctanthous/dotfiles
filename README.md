@@ -43,3 +43,5 @@ I'm also not a fan of slapping everything onto Electron or some other JS-style p
 [14]: https://github.com/jwilm/alacritty
 [15]: https://sw.kovidgoyal.net/kitty/
 [16]: https://the.exa.website/
+[17]: https://www.zsh.org/
+[18]: https://ohmyz.sh/
