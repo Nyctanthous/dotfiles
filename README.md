@@ -8,18 +8,18 @@ There are old-school, powerful tools out there do do many given tasks. (Emacs, V
 
 I'm also not a fan of slapping everything onto Electron or some other JS-style platform. So I've attempted to get modern software created with our current, better understanding of UX that also integrates the superior old-school values of well-written, efficient code in a fast language.
 
-| Major Applications | Usage                                 | Previously
-| ------------------ | ------------------------------------- | -----------
-| [Antergos][6]      | Operating System                      |
-| [i3-gaps][9]       | Window Manager                        |
-| [polybar][10]      | Application Bar                       |
-| [Rofi][2]          | Application Launcher                  |
-| [Kitty][15]        | Terminal Emulator                     | [XST][3], [Alacritty][14]
-| [DeaDBeeF][4]      | Audiophile Music Player               |
-| [ne][5]            | Terminal Text Editor                  |
-| [slash][7]         | Terminal-Based System Info and OS Art |
-| [mksh][8]          | Implementation of the Korn Shell      |
-| [ranger][13]       | File Manager                          |
+| Major Applications             | Usage                                 | Previously
+| ------------------------------ | ------------------------------------- | -----------
+| [Antergos][6]                  | Operating System                      |
+| [i3-gaps][9]                   | Window Manager                        |
+| [polybar][10]                  | Application Bar                       |
+| [Rofi][2]                      | Application Launcher                  |
+| [Kitty][15]                    | Terminal Emulator                     | [XST][3], [Alacritty][14]
+| [DeaDBeeF][4]                  | Audiophile Music Player               |
+| [ne][5]                        | Terminal Text Editor                  |
+| [slash][7]                     | Terminal-Based System Info and OS Art |
+| [zsh][17] with [oh-my-zsh][18] | User-facing shell                     | [mksh][8]
+| [ranger][13]                   | File Manager                          |
 
 | Minor Applications | Usage                                 |
 | ------------------ | ------------------------------------- |
