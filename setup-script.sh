@@ -44,7 +44,7 @@ REQ[15]="firefox"    # Web browser, of course.
 REQ[16]="kitty-git"  # GPU-driven terminal
 REQ[17]="rofi"       # App launcher
 REQ[18]="zsh"        # Shell
-REQ[19]="oh-my-zsh"  # Shell extensions
+REQ[19]="oh-my-zsh-git"  # Shell extensions
 REQ[20]="polybar"    # Bar
 
 # Fonts
