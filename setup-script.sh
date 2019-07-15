@@ -17,6 +17,7 @@ makepkg -fsri
 REQ[0]="jsoncpp"     # To help with Polybar
 REQ[1]="xclip"       # Helps with copy & paste.
 REQ[2]="highlight"   # Text highlighter you can pipe into
+REQ[3]="dash"        # Limited, fast terminal emulator
 
 # Theming Applications
 REQ[3]="pywal"       # Color theme generation.
